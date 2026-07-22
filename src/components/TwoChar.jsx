@@ -3,8 +3,11 @@ import characterData from '../datas/character.js';
 
 function TwoChar() {
     const navigate = useNavigate();
+
     const character01 = characterData.find((char) => char.id === 'char_1');
     const character02 = characterData.find((char) => char.id === 'char_2');
+    console.log(character01, character02);
+    console.log(character01, character02);
 
     const handleClick = (id) => {
         navigate(`/detail?id=${id}`);
@@ -27,7 +30,7 @@ function TwoChar() {
                             maxheight: '380px',
                         }}
                     ></img>
-                    <h3 className="text-center">{character01.name0}</h3>
+                    <h3 className="text-center">{character01?.name}</h3>
                 </div>
                 <div onClick={() => handleClick('char_2')} style={{ cursor: 'pointer' }}>
                     <img
@@ -42,7 +45,7 @@ function TwoChar() {
                             height: '500px',
                         }}
                     ></img>
-                    <h3 className="text-center">{character02.name}</h3>
+                    <h3 className="text-center">{character02?.name}</h3>
                 </div>
             </div>
         </>

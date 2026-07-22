@@ -1,14 +1,13 @@
 import { useSearchParams } from 'react-router-dom';
 import characterData from '../datas/character';
-import '../pages/main/Detail.css';
+import '../pages/Detail.css';
 
 function Detail() {
     const [searchParams] = useSearchParams();
     const id = searchParams.get('id');
 
     const character = characterData.find((char) => char.id === id);
-    console.log(id);
-    console.log(character);
+
     return (
         <div style={{ display: 'flex', gap: '50px' }}>
             <img
