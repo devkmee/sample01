@@ -35,9 +35,9 @@ function Detail() {
                         <tr>
                             <th>키워드</th>
                             <td>
-                                {Array.isArray(character.keywords)
-                                    ? character.keywords.join(' / ')
-                                    : character.keywords}
+                                {Array.isArray(character?.keywords)
+                                    ? character?.keywords.join(' / ')
+                                    : character?.keywords}
                             </td>
                         </tr>
                         <tr>
@@ -45,22 +45,39 @@ function Detail() {
                             <td>{character.appearance}</td>
                         </tr>
                         <tr>
+                            {character.id === 'char_1' ? (
+                                <>
+                                    <th>식성</th>
+                                    <td>{character?.diet}</td>
+                                </>
+                            ) : (
+                                <>
+                                    <th>의상</th>
+                                    <td>{character?.clothes}</td>
+                                </>
+                            )}
+                        </tr>
+                        <tr>
+                            <th>성격</th>
+                            <td>{character.trait}</td>
+                        </tr>
+                        <tr>
                             <th>모티프</th>
                             <td>
-                                {character.motif1 ? <p>{character.motif1}</p> : ''}
-                                {character.motif2 ? <p>{character.motif2}</p> : ''}
+                                {character?.motif1 ? <p>{character?.motif1}</p> : ''}
+                                {character?.motif2 ? <p>{character?.motif2}</p> : ''}
                             </td>
                         </tr>
                         <tr>
                             {character.id === 'char_1' ? (
                                 <>
                                     <th>두이름</th>
-                                    <td>{character.twonames}</td>
+                                    <td>{character?.twonames}</td>
                                 </>
                             ) : (
                                 <>
                                     <th>직업</th>
-                                    <td>{character.jobs}</td>
+                                    <td>{character?.jobs}</td>
                                 </>
                             )}
                         </tr>
@@ -68,12 +85,29 @@ function Detail() {
                             {character.id === 'char_1' ? (
                                 <>
                                     <th>능력</th>
-                                    <td>{character.skill}</td>
+                                    <td>{character?.skill}</td>
                                 </>
                             ) : (
                                 <>
                                     <th>과거</th>
-                                    <td>{character.past}</td>
+                                    <td>{character?.past}</td>
+                                </>
+                            )}
+                        </tr>
+                        <tr>
+                            {character.id === 'char_1' ? (
+                                <>
+                                    <th>습관</th>
+                                    <td>{character?.habit}</td>
+                                </>
+                            ) : (
+                                <>
+                                    <th>취미</th>
+                                    <td>
+                                        {character.hobby1 ? <p>{character?.hobby1}</p> : ''}
+                                        {character.hobby2 ? <p>{character?.hobby2}</p> : ''}
+                                        {character.hobby3 ? <p>{character?.hobby3}</p> : ''}
+                                    </td>
                                 </>
                             )}
                         </tr>

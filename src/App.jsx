@@ -12,9 +12,9 @@ function App() {
         <>
             <Header />
 
-            <nav>
+            {/* <nav>
                 <Link to="/">Main</Link> | <Link to="/detail">Detail</Link>
-            </nav>
+            </nav> */}
 
             <Routes>
                 <Route path="/" element={<GuestMain />} />

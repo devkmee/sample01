@@ -25,7 +25,7 @@ function Footer() {
                     alignItems: 'center',
                 }}
             >
-                <p>&copy; madeby 오솔복치 홍보링크</p>
+                <p>&copy; madeby 크레페 홍보링크</p>
             </div>
         </footer>
     );
