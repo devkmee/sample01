@@ -8,6 +8,7 @@ function Footer() {
                     backgroundColor: '#ffb6d9',
                     display: 'flex',
                     width: '400px',
+                    height: '150px',
                     justifyContent: 'center',
                     alignItems: 'center',
                 }}
@@ -19,6 +20,7 @@ function Footer() {
                 style={{
                     flex: 1,
                     width: '400px',
+                    height: '150px',
                     backgroundColor: '#e6d7f0',
                     display: 'flex',
                     justifyContent: 'center',

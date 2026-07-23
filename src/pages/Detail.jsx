@@ -41,6 +41,13 @@ function Detail() {
                             </td>
                         </tr>
                         <tr>
+                            <th>모티프</th>
+                            <td>
+                                {character?.motif1 ? <p>{character?.motif1}</p> : ''}
+                                {character?.motif2 ? <p>{character?.motif2}</p> : ''}
+                            </td>
+                        </tr>
+                        <tr>
                             <th>외형</th>
                             <td>{character.appearance}</td>
                         </tr>
@@ -62,13 +69,6 @@ function Detail() {
                             <td>{character.trait}</td>
                         </tr>
                         <tr>
-                            <th>모티프</th>
-                            <td>
-                                {character?.motif1 ? <p>{character?.motif1}</p> : ''}
-                                {character?.motif2 ? <p>{character?.motif2}</p> : ''}
-                            </td>
-                        </tr>
-                        <tr>
                             {character.id === 'char_1' ? (
                                 <>
                                     <th>두이름</th>
@@ -79,6 +79,26 @@ function Detail() {
                                     <th>직업</th>
                                     <td>{character?.jobs}</td>
                                 </>
+                            )}
+                        </tr>
+                        <tr>
+                            {character.id === 'char_1' ? (
+                                <>
+                                    <th>하데스</th>
+                                    <td>{character?.hades}</td>
+                                </>
+                            ) : (
+                                <></>
+                            )}
+                        </tr>
+                        <tr>
+                            {character.id === 'char_1' ? (
+                                <>
+                                    <th>에메트셀크</th>
+                                    <td>{character?.ascian}</td>
+                                </>
+                            ) : (
+                                <></>
                             )}
                         </tr>
                         <tr>
