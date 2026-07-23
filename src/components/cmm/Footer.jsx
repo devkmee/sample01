@@ -9,7 +9,7 @@ function Footer() {
                     flex: 1,
                     backgroundColor: '#ffb6d9',
                     display: 'flex',
-                    width: '4px',
+                    width: '450px',
                     height: '150px',
                     justifyContent: 'center',
                     alignItems: 'center',
