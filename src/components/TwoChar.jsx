@@ -17,8 +17,13 @@ function TwoChar() {
         <>
             {/* <div className="flex flex-col items-center justify-center gap-4"></div> */}
 
-            <div style={{ display: 'flex', gap: '50px', justifyContent: 'center', alignItems: 'center' }}>
-                <div onClick={() => handleClick('char_1')} style={{ cursor: 'pointer' }}>
+            <div
+                style={{ display: 'flex', gap: '100px', justifyContent: 'center', alignItems: 'center', width: '100%' }}
+            >
+                <div
+                    onClick={() => handleClick('char_1')}
+                    style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+                >
                     <img
                         className="img-content"
                         src={`/character/${character01.id}.png`}
@@ -30,9 +35,12 @@ function TwoChar() {
                             maxheight: '380px',
                         }}
                     ></img>
-                    <h3 className="text-center">{character01?.name}</h3>
+                    <h2 className="text-center">{character01?.name}</h2>
                 </div>
-                <div onClick={() => handleClick('char_2')} style={{ cursor: 'pointer' }}>
+                <div
+                    onClick={() => handleClick('char_2')}
+                    style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+                >
                     <img
                         className="img-content"
                         src={`/character/${character02.id}.png`}
@@ -45,7 +53,7 @@ function TwoChar() {
                             height: '500px',
                         }}
                     ></img>
-                    <h3 className="text-center">{character02?.name}</h3>
+                    <h2 className="text-center">{character02?.name}</h2>
                 </div>
             </div>
         </>
