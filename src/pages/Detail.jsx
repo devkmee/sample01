@@ -21,7 +21,11 @@ function Detail() {
                 }}
             ></img>
             <div>
-                {character.nameDesc ? <h3>{character.nameDesc}</h3> : ''}
+                {character.nameDesc ? (
+                    <h1 style={{ textAlign: 'center', marginBottom: '100px' }}>{character.nameDesc}</h1>
+                ) : (
+                    ''
+                )}
                 <table>
                     <tbody>
                         <tr>
