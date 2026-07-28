@@ -32,7 +32,6 @@ function TwoChar() {
                             flex: 1,
                             width: '400px',
                             height: '500px',
-                            maxheight: '380px',
                         }}
                     ></img>
                     <h2 className="text-center">{character01?.name}</h2>
