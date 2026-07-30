@@ -24,7 +24,7 @@ function Detail() {
                 {character.nameDesc ? (
                     <h1 style={{ textAlign: 'center', marginBottom: '100px' }}>{character.nameDesc}</h1>
                 ) : (
-                    ''
+                    <h1 style={{ textAlign: 'center', marginBottom: '100px' }}>{character.name}</h1>
                 )}
                 <table>
                     <tbody>
