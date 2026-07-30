@@ -3,7 +3,7 @@ import characterData from '../datas/character';
 import '../pages/Detail.css';
 
 function Detail() {
-    const [searchParamPs] = useSearchParams();
+    const [searchParams] = useSearchParams();
     const id = searchParams.get('id');
 
     const character = characterData.find((char) => char.id === id);
